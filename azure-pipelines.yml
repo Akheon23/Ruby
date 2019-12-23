@@ -10,9 +10,15 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+
 - task: UseRubyVersion@0
   inputs:
     versionSpec: '>= 2.5'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'gem install jquery-rails -v 4.1.1'
+
 
 - script: |
     gem install bundler
