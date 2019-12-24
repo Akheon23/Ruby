@@ -16,7 +16,8 @@ steps:
     targetType: 'inline'
     script: |
       sudo apt-cache search git
-      sudo apt-get install git-all --fix-missing
+      sudo apt-get update
+      siudo apt-get upgrade
 
 
 - task: UseRubyVersion@0
