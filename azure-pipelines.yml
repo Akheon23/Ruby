@@ -11,6 +11,12 @@ pool:
 
 steps:
 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      sudo apt-get update
+      sudo apt-get upgrade
 - task: UseRubyVersion@0
   inputs:
     versionSpec: '>= 2.5'
