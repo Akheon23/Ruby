@@ -15,7 +15,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      sudo apt-get update git
+      sudo apt-cache search git
    
 - task: UseRubyVersion@0
   inputs:
