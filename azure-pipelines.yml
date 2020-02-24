@@ -17,7 +17,7 @@ steps:
     script: |
       sudo apt-cache search git
       sudo apt-get update
-      siudo apt-get upgrade
+      sudo apt-get upgrade
 
 
 - task: UseRubyVersion@0
